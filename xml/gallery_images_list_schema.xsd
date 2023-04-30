@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="image" type="xs:string"></xs:element>
+
+    <xs:element name="gallery-images-list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="image" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

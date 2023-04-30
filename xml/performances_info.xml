@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<performances xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="performances_info_schema.xsd">
+    <performance>
+        <image>../images/performances/paulinka.jpg</image>
+        <name>Паўлінка</name>
+        <age>12</age>
+        <description>сцэны са шляхоцкага жыцця</description>
+        <author-before>Аўтар</author-before>
+        <author>Янка Купала</author>
+        <director-before>Рэжысёр</director-before>
+        <director>Л.&#xA0;Літвінаў</director>
+        <painter-before>Мастак</painter-before>
+        <painter>Б.&#xA0;Малкін</painter>
+        <duration>2 гадзіны</duration>
+        <date>05.06.2023 у 18:00</date>
+        <price>8 BYN</price>
+    </performance>
+
+    <performance>
+        <image>../images/performances/cornaja_panna_niasviza.jpg</image>
+        <name>Чорная панна Нясвіжа</name>
+        <age>12</age>
+        <description>містычная легенда пра каханне ў адной дзеі</description>
+        <author-before>Аўтар</author-before>
+        <author>Аляксей Дудараў</author>
+        <director-before>Рэжысёр</director-before>
+        <director>В.&#xA0;Раеўскі</director>
+        <painter-before>Мастак</painter-before>
+        <painter>Б.&#xA0;Герлаван</painter>
+        <duration>1 гадзіна 30 хвілін</duration>
+        <date>07.06.2023 у 19:00</date>
+        <price>9 BYN</price>
+    </performance>
+
+    <performance>
+        <image>../images/performances/historyja_sakaladnaha_dreva.jpg</image>
+        <name>Гісторыя шакаладнага дрэва</name>
+        <age>0</age>
+        <description>чароўная казка пра двух юных эльфаў</description>
+        <author-before>Аўтар</author-before>
+        <author>Аляксандр Мазькоў</author>
+        <director-before>Рэжысёр</director-before>
+        <director>Д.&#xA0;Філіповіч</director>
+        <painter-before>Мастачка</painter-before>
+        <painter>Л.&#xA0;Сідзельнікава</painter>
+        <duration>1 гадзіна</duration>
+        <date>08.06.2023 у 11:30</date>
+        <price>8 BYN</price>
+    </performance>
+    
+    <performance>
+        <image>../images/performances/vecar.jpg</image>
+        <name>Вечар</name>
+        <age>12</age>
+        <description>рэквіем у адной дзеі</description>
+        <author-before>Аўтар</author-before>
+        <author>Аляксей Дудараў</author>
+        <director-before>Рэжысёр</director-before>
+        <director>В.&#xA0;Раеўскі</director>
+        <painter-before>Мастак</painter-before>
+        <painter>Б.&#xA0;Герлаван</painter>
+        <duration>1 гадзіна 30 хвілін</duration>
+        <date>08.06.2023 у 14:00</date>
+        <price>8 BYN</price>
+    </performance>
+    
+    <performance>
+        <image>../images/performances/zanicba.jpg</image>
+        <name>Жаніцьба</name>
+        <age>12</age>
+        <description>надзвычайна неверагоднае здарэнне ў 2-х актах</description>
+        <author-before>Аўтар</author-before>
+        <author>Мікалай Гогаль</author>
+        <director-before>Рэжысёр</director-before>
+        <director>Д.&#xA0;Філіповіч</director>
+        <painter-before>Мастак</painter-before>
+        <painter>А.&#xA0;Камянец</painter>
+        <duration>2 гадзіны 40 хвілін</duration>
+        <date>10.06.2023 у 19:00</date>
+        <price>8.50 BYN</price>
+    </performance>
+
+    <performance>
+        <image>../images/performances/cas_zyccia.jpg</image>
+        <name>Час жыцця</name>
+        <age>12</age>
+        <description>звычайная гісторыя</description>
+        <author-before>Аўтар</author-before>
+        <author>Освальд Заграднік</author>
+        <director-before>Рэжысёр</director-before>
+        <director>І.&#xA0;Малаў</director>
+        <painter-before>Мастак</painter-before>
+        <painter>А.&#xA0;Камянец</painter>
+        <duration>2 гадзіны 10 хвілін</duration>
+        <date>11.06.2023 у 19:00</date>
+        <price>9 BYN</price>
+    </performance>
+</performances>

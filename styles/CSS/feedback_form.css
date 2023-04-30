@@ -1,0 +1,99 @@
+form.feedback-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6vw auto;
+  grid-template-columns: 6vw auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+form.feedback-form label {
+  margin: 0.5vw;
+  font-size: 1.5vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+form.feedback-form label::after {
+  content: "*";
+  font-weight: bold;
+  color: red;
+}
+form.feedback-form textarea, form.feedback-form input[type=text], form.feedback-form input[type=email] {
+  margin: 0.5vw 0;
+  padding: 0.5vw;
+  width: auto;
+  font-size: 1.3vw;
+}
+form.feedback-form input[type=text], form.feedback-form input[type=email] {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+}
+form.feedback-form input[type=submit] {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5vw 2vw;
+}
+form.feedback-form .feedback-form__textarea-label {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  margin-top: 1vw;
+}
+form.feedback-form textarea {
+  resize: none;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  form.feedback-form {
+    -ms-grid-columns: 15vw auto;
+    grid-template-columns: 15vw auto;
+  }
+  form.feedback-form label {
+    margin: 1vw;
+    font-size: 3.5vw;
+  }
+  form.feedback-form input[type=text], form.feedback-form input[type=email], form.feedback-form textarea {
+    margin: 1.5vw 0;
+    padding: 2vw;
+    font-size: 3vw;
+  }
+  form.feedback-form input[type=submit] {
+    padding: 1.5vw 6vw;
+  }
+  form.feedback-form .feedback-form__textarea-label {
+    margin-top: 2vw;
+  }
+}
+@media (max-width: 767px) {
+  form.feedback-form {
+    -ms-grid-columns: 25vw auto;
+    grid-template-columns: 25vw auto;
+  }
+  form.feedback-form label {
+    margin: 1vw;
+    font-size: 6vw;
+  }
+  form.feedback-form input[type=text], form.feedback-form input[type=email], form.feedback-form textarea {
+    margin: 1.5vw 0;
+    padding: 2vw;
+    font-size: 5vw;
+  }
+  form.feedback-form input[type=submit] {
+    padding: 2vw 7vw;
+  }
+  form.feedback-form .feedback-form__textarea-label {
+    margin-top: 3vw;
+  }
+}

@@ -1,0 +1,498 @@
+figure.gallery {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    %gallery__button {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+
+        padding: 2vw;
+        line-height: 6vw;
+        margin-top: -5vw;
+
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        font-size: 3.5vw;
+        user-select: none;
+        transition: background-color 0.1s linear;
+        
+        &:hover {
+            background-color: black;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    > button {
+        $gallery__button_radius: 2vw;
+        @extend %gallery__button;
+
+        &.gallery__prev-button {
+            border-radius: 0 $gallery__button_radius $gallery__button_radius 0;
+            left: 0;
+        }
+
+        &.gallery__next-button {
+            border-radius: $gallery__button_radius 0 0 $gallery__button_radius;
+            right: 0;
+        }
+    }
+}
+
+main > article {
+    margin: 0 10vw;
+    padding: 0 0 2.5vw 0;
+}
+
+.main__article__heading {
+    margin: 0 -10vw;
+
+    border-style: solid none;
+    border-width: 0.6vw;
+    border-color: #660000;
+
+    padding: 0.7vw 15vw;
+    background-color: darkred;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
+    color: white;
+}
+
+%perf_and_news_div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+%block-link {
+    display: block;
+    margin: 1.5vw 2vw;
+    padding: 1vw;
+    flex: 1 1 250px;
+    border: 0.3vw solid lightgrey;
+    border-radius: 1vw;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lightyellow;
+        box-shadow: 0 0 0.3vw 0.3vw pink;
+        border-color: pink;
+    }
+}
+
+.main__performances-article__div {
+    @extend %perf_and_news_div;
+
+    .performance-block {
+        @extend %block-link;
+        max-width: 25vw;
+        min-width: 15vw;
+        text-align: center;
+
+        &:hover .performance-block__figure img {
+            width: 80%;
+        }
+
+        > p {
+            margin: 1vw 0;
+        }
+    }
+
+    .performance-block__figure img {
+        width: 70%;
+        transition: all 0.3s ease-out;
+    }
+
+    .performance-block__name {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 2vw;
+        color: darkred;
+    }
+        
+    .performance-block__author {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .performance-block__description {
+        margin-top: 2vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        font-style: italic;
+        color: #333333;
+    }
+        
+    .performance-block__date {
+        margin-top: 2vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        font-weight: bold;
+        color: darkred;
+    }
+}
+
+.main__news-article__div {
+    @extend %perf_and_news_div;
+
+    .news-block {
+        @extend %block-link;
+
+        > p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+
+    .news-block__title {
+        margin: 1vw 0;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: darkred;
+    }
+    
+    .news-block__date {
+        margin: 0;
+        text-align: right;
+        text-decoration: underline;
+        font-size: 1.7vw;
+        color: #666666;
+    }
+
+    .news-block__text {
+        margin: 1vw;
+        text-indent: 3vw;
+        text-align: justify;
+        font-size: 1.7vw;
+        color: black;
+    }
+}
+
+.main__about-us-article figure {
+    margin: 1.5vw;
+    text-align: center;
+    
+    img {
+        width: 70%;
+    }
+}
+    
+.main__feedback-article {
+    padding-bottom: 0;
+
+    .main__article__heading {
+        margin-bottom: 1.5vw;
+    }
+}
+
+.main__about-us-article__article {
+    margin: 2vw 0;
+
+    > p {
+        margin: 1vw 0 0 0;
+        text-indent: 3vw;
+        text-align: justify;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5vw;
+        color: black;
+    }
+}
+
+.main__about-us-article__article__title {
+    margin: 1.5vw;
+    text-align: center;
+
+    font-size: 2.7vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: darkred;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    figure.gallery {
+        height: 45vw;
+    
+        %gallery__button {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            height: 45vw;
+    
+            padding: 18vw 9vw;
+            line-height: 9vw;
+            margin-top: 0;
+            font-size: 5.5vw;
+            &:hover {
+                background-color: black;
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    
+        > button {    
+            &.gallery__prev-button,
+            &.gallery__next-button {
+                border-radius: 0;
+            }
+        }
+    }
+    
+    main > article {
+        margin: 0 7vw;
+        padding: 0 0 4vw 0;
+    }
+
+    .main__article__heading {
+        margin: 0 -7vw;
+        border-width: 1.3vw;
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    %perf_and_news_div {
+        padding: 2vw 0 1vw 0;
+    }
+
+    %block-link {
+        margin: 2vw;
+        padding: 2vw;
+        border-width: 0.6vw;
+        border-radius: 2.5vw;
+        &:hover {
+            box-shadow: 0 0 0.6vw 0.6vw pink;
+        }
+    }
+
+    .main__performances-article__div {
+        .performance-block {
+            max-width: 75vw;
+    
+            &:hover .performance-block__figure img {
+                width: 90%;
+            }
+    
+            > p {
+                margin: 2vw 0;
+            }
+        }
+    
+        .performance-block__figure img {
+            width: 90%;
+        }
+    
+        .performance-block__name {
+            font-size: 4vw;
+        }
+            
+        .performance-block__author {
+            font-size: 2.7vw;
+        }
+
+        .performance-block__description {
+            margin-top: 3vw;
+            font-size: 3vw;
+        }
+            
+        .performance-block__date {
+            margin-top: 3vw;
+            font-size: 3.5vw;
+        }
+    }
+    
+    .main__news-article__div {
+        .news-block {
+            flex-basis: 100%;  
+        } 
+
+        .news-block__title {
+            margin: 2vw 0;
+            font-size: 4.5vw;
+        }
+            
+        .news-block__date {
+            font-size: 3.5vw;
+        }
+
+        .news-block__text {
+            text-indent: 3vw;
+            font-size: 3vw;
+        }
+    }
+    
+    .main__about-us-article figure {
+        margin: 0 -7vw;
+                
+        img {
+            width: 100vw;
+        }
+    }
+
+    .main__feedback-article .main__article__heading {
+        margin-bottom: 3vw;
+    }
+    
+    .main__about-us-article__article {
+        margin: 4vw 0;
+
+        > p {
+            margin-top: 2vw;
+            text-indent: 4vw;
+            font-size: 3vw;    
+        }
+    }
+    
+    .main__about-us-article__article__title {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 767px) {
+    figure.gallery {
+        height: 50vw;
+    
+        %gallery__button {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            height: 50vw;
+    
+            padding: 20vw 10vw;
+            line-height: 10vw;
+            margin-top: 0;
+            font-size: 6vw;
+            &:hover {
+                background-color: black;
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    
+        > button {    
+            &.gallery__prev-button,
+            &.gallery__next-button {
+                border-radius: 0;
+            }
+        }
+    }
+
+    main > article {
+        margin: 0 5vw;
+        padding: 0 0 6vw 0;
+    }
+
+    .main__article__heading {
+        margin: 0 -5vw;
+        border-width: 2vw;
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    %perf_and_news_div {
+        padding: 4vw 0 2vw 0;
+    }
+
+    %block-link {
+        margin: 3vw;
+        padding: 3vw;
+        border-width: 1vw;
+        border-radius: 5vw;
+        &:hover {
+            box-shadow: 0 0 1vw 1vw pink;
+        }
+    }
+
+    div.main__performances-article__div {
+        .performance-block {
+            max-width: 90vw;
+
+            > p {                
+                margin: 3vw 0;
+            }
+        }
+
+        .performance-block__figure img {
+            width: 80%;
+        }
+
+        .performance-block__name {
+            font-size: 8vw;
+        }
+            
+        .performance-block__author {
+            font-size: 6vw;
+        }
+
+        .performance-block__description {
+            margin-top: 5vw;
+            font-size: 6vw;
+        }
+            
+        .performance-block__date {
+            margin-top: 5vw;
+            font-size: 7vw;
+        }
+    }
+    
+    .main__news-article__div {
+        .news-block {
+            flex-basis: 100%;
+        }
+            
+        .news-block__title {
+            margin: 2vw 0;
+            font-size: 8vw;
+        }
+        
+        .news-block__date {
+            font-size: 6vw;
+        }
+
+        .news-block__text {
+            text-indent: 6vw;
+            font-size: 6vw;
+        }
+    }
+    
+    .main__about-us-article figure {
+        margin: 0 -5vw;
+        
+        img {
+            width: 100vw;
+        }
+    }
+
+    .main__feedback-article .main__article__heading {
+        margin-bottom: 4vw;
+    }
+                   
+    .main__about-us-article__article {
+        margin: 4vw 0;
+
+        > p {
+            margin-top: 3vw;
+            text-indent: 6vw;
+            font-size: 6vw;  
+        }
+    }
+    
+    .main__about-us-article__article__title {
+        font-size: 8vw;
+    }
+}

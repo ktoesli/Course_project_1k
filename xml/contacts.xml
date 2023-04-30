@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="contacts_schema.xsd">
+    <department>
+        <department-name>Адміністрацыя</department-name>
+
+        <contact>
+            <post>Генеральны дырэктар</post>
+            <name>Шастакоў Аляксандр Віктаравіч</name>
+            <phone>+375 (17) 363-60-81</phone>
+        </contact>
+
+        <contact>
+            <post>Сакратарка генеральнага дырэктара</post>
+            <name>Кубарская Аксана Іосіфаўна</name>
+            <phone>+375 (17) 363-60-81</phone>
+        </contact>
+        
+        <contact>
+            <post>Галоўная бухгалтарка</post>
+            <name>Шаўчэнка Валянціна Іосіфаўна</name>
+            <phone>+375 (17) 347-30-24</phone>
+        </contact>
+        
+        <contact>
+            <post>Намесніца галоўнай бухгалтаркі</post>
+            <name>Бандаравец Юлія Анатольеўна</name>
+            <phone>+375 (17) 373-72-47</phone>
+        </contact>
+        
+        <contact>
+            <post>Загадчыца аддзела арганізацыйна-кадравай работы</post>
+            <name>Юшкевіч Таццяна Сяргееўна</name>
+            <phone>+375 (17) 378-85-03</phone>
+        </contact>
+        
+        <contact>
+            <post>Спецыялістка аддзела арганізацыйна-кадравай работы</post>
+            <name>Зенкевіч Вольга Ігараўна</name>
+            <phone>+375 (17) 397-10-36</phone>
+        </contact>
+        
+        <contact>
+            <post>Вядучая юрысконсультка</post>
+            <name>Дабравольская Кацярына Канстанцінаўна</name>
+            <phone>+375 (17) 399-68-05</phone>
+        </contact>
+        
+        <contact>
+            <post>Юрысконсультка</post>
+            <name>Бідненка Дар'я Генадзьеўна</name>
+            <phone>+375 (17) 360-93-41</phone>
+        </contact>
+    </department>
+
+    <department>
+        <department-name>Творчае кіраўніцтва</department-name>
+
+        <contact>
+            <post>Мастацкая кіраўніца</post>
+            <name>Няфёдава Вольга Валянцінаўна</name>
+            <phone>+375 (17) 373-47-75</phone>
+        </contact>
+
+        <contact>
+            <post>Галоўны мастак</post>
+            <name>Герлаван Барыс Федасеевіч</name>
+            <phone>+375 (17) 365-31-62</phone>
+        </contact>
+
+        <contact>
+            <post>Загадчыца трупы</post>
+            <name>Кудзінава-Смыслова Марына Віктараўна</name>
+            <phone>+375 (17) 379-86-55</phone>
+        </contact>
+    </department>
+
+    <department>
+        <department-name>Аддзел рэалізацыі</department-name>
+
+        <contact>
+            <post>Спецыялістка па рабоце з кліентамі</post>
+            <name>Кавалькова Марына Валер'еўна</name>
+            <phone>+375 (17) 365-42-37</phone>
+        </contact>
+
+        <contact>
+            <post>Спецыялістка па рабоце з кліентамі</post>
+            <name>Дзядкоўская Людміла Яўгенаўна</name>
+            <phone>+375 (17) 357-66-27</phone>
+        </contact>
+    </department>
+    
+    <department>
+        <department-name>Літаратурна-драматургічная частка</department-name>
+
+        <contact>
+            <name>Тэатральны архіў</name>
+            <phone>+375 (17) 365-44-96</phone>
+        </contact>
+    </department>
+    
+    <department>
+        <department-name>Служба гледача</department-name>
+
+        <contact>
+            <post>Галоўная адміністратарка</post>
+            <name>Дземеш Таццяна Леанідаўна</name>
+            <phone>+375 (17) 365-39-02</phone>
+        </contact>
+
+        <contact>
+            <post>Адміністратарка</post>
+            <name>Максімовіч Галіна Іванаўна</name>
+            <phone>+375 (17) 378-89-31</phone>
+        </contact>
+
+        <contact>
+            <post>Спецыялістка па сувязях</post>
+            <name>Кавалёва Ганна Русланаўна</name>
+            <phone>+375 (17) 357-99-07</phone>
+        </contact>
+    </department>
+    
+    <department>
+        <department-name>Пастановачная частка</department-name>
+
+        <contact>
+            <post>Загадчыца мастацка-пастановачнай часткі</post>
+            <name>Рыжэўская Аліна Мікалаеўна</name>
+        </contact>
+
+        <contact>
+            <post>Начальнік асвятляльна-праекцыйнага цэха</post>
+            <name>Сарока Аляксандр Мікалаевіч</name>
+            <phone>+375 (17) 323-24-93</phone>
+        </contact>
+
+        <contact>
+            <post>Начальнік радыётэхнічнага цэха</post>
+            <name>Захаранка Павел Мікалаевіч</name>
+            <phone>+375 (17) 323-24-93</phone>
+        </contact>
+    </department>
+
+    <department>
+        <department-name>Музычная частка</department-name>
+
+        <contact>
+            <name>Вішнякоў Генадзь Рыгоравіч</name>
+            <instrument>скрыпка</instrument>
+        </contact>
+        
+        <contact>
+            <name>Змушко Кірыл Дзмітрыевіч</name>
+            <instrument>баян</instrument>
+        </contact>
+        
+        <contact>
+            <name>Карпенка Жанна Міхайлаўна</name>
+            <instrument>клавішныя</instrument>
+        </contact>
+        
+        <contact>
+            <name>Сапоненка Андрэй Уладзіміравіч</name>
+            <instrument>ударныя</instrument>
+        </contact>
+        
+        <contact>
+            <name>Пост аховы</name>
+            <phone>+375 (17) 322-24-54</phone>
+        </contact>
+    </department>
+</contacts>

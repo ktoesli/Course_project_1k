@@ -1,0 +1,254 @@
+.main__performances-article {
+  margin: 0 10vw;
+}
+
+.main__article__heading-line {
+  margin-bottom: 1vw;
+}
+
+.performance-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: -3vw 1vw 1vw 1vw;
+  padding: 5vw 1vw 1vw 1vw;
+}
+
+.performance-block__figure {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  margin: 1.5vw;
+  text-align: center;
+}
+.performance-block__figure img {
+  width: 20vw;
+}
+
+.performance-block__grid {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 250px;
+          flex: 5 1 250px;
+  margin: 1vw 2vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+}
+.performance-block__grid p, .performance-block__grid button {
+  margin: 0.65vw;
+}
+
+.performance-block__grid__name {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: darkred;
+}
+
+.performance-block__grid__description {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #333333;
+}
+
+.performance-block__grid__author-before,
+.performance-block__grid__director-before,
+.performance-block__grid__painter-before,
+.performance-block__grid__duration-before,
+.performance-block__grid__price-before {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6vw;
+  font-style: italic;
+  color: #444444;
+}
+
+.performance-block__grid__author,
+.performance-block__grid__director,
+.performance-block__grid__painter,
+.performance-block__grid__duration,
+.performance-block__grid__price {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: black;
+}
+
+.performance-block__grid__date {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  font-size: 2vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: darkred;
+}
+
+.performance-block__grid__button {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.5vw 2vw;
+}
+
+.main__performances-article__separator {
+  height: 0.3vw;
+  background-color: #444444;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__performances-article {
+    margin: 0 4vw;
+  }
+
+  .main__article__heading-line {
+    margin-bottom: 1vw;
+  }
+
+  .performance-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: 2vw 0;
+    padding: 2vw 0;
+  }
+
+  .performance-block__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 fit-content;
+            flex: 1 1 fit-content;
+  }
+  .performance-block__figure img {
+    width: 40vw;
+  }
+
+  .performance-block__grid {
+    margin: 1vw;
+  }
+  .performance-block__grid p, .performance-block__grid button {
+    margin: 1.5vw 1vw;
+  }
+
+  .performance-block__grid__name {
+    font-size: 5.5vw;
+  }
+
+  .performance-block__grid__description {
+    font-size: 4vw;
+  }
+
+  .performance-block__grid__author-before,
+.performance-block__grid__author,
+.performance-block__grid__director-before,
+.performance-block__grid__director,
+.performance-block__grid__painter-before,
+.performance-block__grid__painter,
+.performance-block__grid__duration-before,
+.performance-block__grid__duration,
+.performance-block__grid__price-before,
+.performance-block__grid__price {
+    font-size: 3.5vw;
+  }
+
+  .performance-block__grid__date {
+    font-size: 5vw;
+  }
+
+  .performance-block__grid__button {
+    padding: 1.5vw;
+  }
+
+  .main__performances-article__separator {
+    height: 0.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .main__performances-article {
+    margin: 0 5vw;
+  }
+
+  .main__article__heading-line {
+    margin-bottom: 5vw;
+  }
+
+  .performance-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: 2vw 0;
+    padding: 2vw 0;
+  }
+
+  .performance-block__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 fit-content;
+            flex: 1 1 fit-content;
+  }
+  .performance-block__figure img {
+    width: 65vw;
+  }
+
+  .performance-block__grid {
+    margin: 2vw;
+  }
+  .performance-block__grid p, .performance-block__grid button {
+    margin: 2.7vw 2vw;
+  }
+
+  .performance-block__grid__name {
+    font-size: 9vw;
+  }
+
+  .performance-block__grid__description {
+    font-size: 6vw;
+  }
+
+  .performance-block__grid__author-before,
+.performance-block__grid__author,
+.performance-block__grid__director-before,
+.performance-block__grid__director,
+.performance-block__grid__painter-before,
+.performance-block__grid__painter,
+.performance-block__grid__duration-before,
+.performance-block__grid__duration,
+.performance-block__grid__price-before,
+.performance-block__grid__price {
+    font-size: 5.5vw;
+  }
+
+  .performance-block__grid__date {
+    font-size: 8vw;
+  }
+
+  .performance-block__grid__button {
+    padding: 1.5vw;
+  }
+
+  .main__performances-article__separator {
+    height: 1vw;
+  }
+}

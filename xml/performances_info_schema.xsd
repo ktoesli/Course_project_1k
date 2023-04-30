@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="image" type="xs:string"></xs:element>
+    <xs:element name="name" type="xs:string"></xs:element>
+    <xs:element name="age" type="xs:nonNegativeInteger"></xs:element>
+    <xs:element name="description" type="xs:string"></xs:element>
+    <xs:element name="author" type="xs:string"></xs:element>
+    <xs:element name="director" type="xs:string"></xs:element>
+    <xs:element name="painter" type="xs:string"></xs:element>
+    <xs:element name="duration" type="xs:string"></xs:element>
+    <xs:element name="date" type="xs:string"></xs:element>
+    <xs:element name="price" type="xs:string"></xs:element>
+
+    <xs:element name="author-before">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Аўтар"></xs:enumeration>
+                <xs:enumeration value="Аўтарка"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    <xs:element name="director-before">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Рэжысёр"></xs:enumeration>
+                <xs:enumeration value="Рэжысёрка"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    <xs:element name="painter-before">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Мастак"></xs:enumeration>
+                <xs:enumeration value="Мастачка"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="performance">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="image"></xs:element>
+                <xs:element ref="name"></xs:element>
+                <xs:element ref="age"></xs:element>
+                <xs:element ref="description"></xs:element>
+                <xs:element ref="author-before"></xs:element>
+                <xs:element ref="author"></xs:element>
+                <xs:element ref="director-before"></xs:element>
+                <xs:element ref="director"></xs:element>
+                <xs:element ref="painter-before"></xs:element>
+                <xs:element ref="painter"></xs:element>
+                <xs:element ref="duration"></xs:element>
+                <xs:element ref="date"></xs:element>
+                <xs:element ref="price"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="performances">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="performance" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

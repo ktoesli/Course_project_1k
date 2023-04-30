@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='be'>
+    <head>
+        <title>Кантакты | Тэатр &#xab;Дабрадзеі&#xbb;</title>
+
+        <meta charset='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+        <!-- Стили для шапки и подвала сайта -->
+        <link rel='stylesheet' href='styles/CSS/general.css'/>
+        <!-- Собственные стили страницы "Контакты"-->
+        <link rel='stylesheet' href='styles/CSS/contacts.css'/>
+        <!-- Стили формы обратной связи-->
+        <link rel='stylesheet' href='styles/CSS/feedback_form.css'/>
+        <!-- Стили кнопки-->
+        <link rel='stylesheet' href='styles/CSS/button_style.css'/>
+    </head>
+
+    <body>
+        <!-- Шапку вставляет JavaScript-код general_script.js -->
+        <header></header>
+
+        <main>
+            <!-- Раздел с контактной информацией -->
+            <article class='main__contacts-article'>
+                <h1 class='main__article__page-heading'>Кантакты</h1>
+                <hr class='main__article__heading-line'/>
+
+                <!-- Google-карта расположения театра -->
+                <iframe class='main__contacts-article__map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1924.9868032311065!2d27.560924173826262!3d53.90085107366321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf04fdf5ec7b%3A0x48fbab0674f45711!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INCQ0LrQsNC00LXQvNC40YfQtdGB0LrQuNC5INCi0LXQsNGC0YAg0LjQvC4g0K8u0JrRg9C_0LDQu9GL!5e0!3m2!1sru!2sby!4v1651598281773!5m2!1sru!2sby"></iframe>
+                
+                <!-- Краткая контактная информация -->
+                <p>220030 Рэспубліка Беларусь, г.&nbsp;Мінск, вул.&nbsp;Энгельса,&nbsp;7</p>
+                <p>Тэлефон: <span class='nobr'>+375 (17) 363-60-81</span></p>
+                <p>E-mail: dabradziej@gmail.com</p>
+                
+                <!-- Отмена обтекания карты -->
+                <div class='main__contacts-article__div_clear_both'></div>
+
+                <!-- Сюда будут вставляться контактные данные из contacts.xml -->
+            </article>
+
+            <!-- Раздел с формой обратной связи -->
+            <article class='main__feedback-article'>
+                <h2>Напісаць нам</h2>
+                <!-- Сюда будет вставляться форма обратной связи -->
+            </article>
+        </main>
+
+        <!-- Подвал вставляет JavaScript-код general_script.js -->
+        <footer></footer>
+
+        <!-- Вставляет шапку и подвал -->
+        <script src='scripts/general_script.js'></script>
+        <!-- Вставляет подробную контактную информацию из contacts.xml -->
+        <script src='scripts/contacts_script.js'></script>
+    </body>
+</html>

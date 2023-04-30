@@ -1,0 +1,229 @@
+.main__performances-article {
+    margin: 0 10vw;
+}
+    
+.main__article__heading-line {
+    margin-bottom: 1vw;
+}
+
+.performance-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: -3vw 1vw 1vw 1vw;
+    padding: 5vw 1vw 1vw 1vw;
+}
+    
+.performance-block__figure {
+    flex: 1 1 250px;
+    margin: 1.5vw;
+    text-align: center;
+
+    img {
+        width: 20vw;
+    }
+}
+
+.performance-block__grid {
+    flex: 5 1 250px;
+    margin: 1vw 2vw;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    p, button {
+        margin: 0.65vw;
+    }
+}
+
+.performance-block__grid__name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: darkred;
+}
+
+.performance-block__grid__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #333333;
+}
+
+.performance-block__grid__author-before,
+.performance-block__grid__director-before,
+.performance-block__grid__painter-before,
+.performance-block__grid__duration-before,
+.performance-block__grid__price-before {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6vw;
+    font-style: italic;
+    color: #444444;
+}
+
+.performance-block__grid__author,
+.performance-block__grid__director,
+.performance-block__grid__painter,
+.performance-block__grid__duration,
+.performance-block__grid__price {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: black;
+}
+
+.performance-block__grid__date {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkred;
+}
+
+.performance-block__grid__button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+    padding: 0.5vw 2vw;
+}
+
+.main__performances-article__separator {
+    height: 0.3vw;
+    background-color: #444444;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main__performances-article {
+        margin: 0 4vw;
+    }
+
+    .main__article__heading-line {
+        margin-bottom: 1vw;
+    }
+        
+    .performance-block {
+        flex-flow: column nowrap;
+        margin: 2vw 0;
+        padding: 2vw 0;
+    }
+            
+    .performance-block__figure {
+        flex: 1 1 fit-content;
+
+        img {
+            width: 40vw;
+        }
+    }
+
+    .performance-block__grid {
+        margin: 1vw;
+
+        p, button {
+            margin: 1.5vw 1vw;
+        }
+    }
+
+    .performance-block__grid__name {
+        font-size: 5.5vw;
+    }
+
+    .performance-block__grid__description {
+        font-size: 4vw;
+    }
+        
+    .performance-block__grid__author-before,
+    .performance-block__grid__author,
+    .performance-block__grid__director-before,
+    .performance-block__grid__director,
+    .performance-block__grid__painter-before,
+    .performance-block__grid__painter,
+    .performance-block__grid__duration-before,
+    .performance-block__grid__duration,
+    .performance-block__grid__price-before,
+    .performance-block__grid__price {
+        font-size: 3.5vw;
+    }
+
+    .performance-block__grid__date {
+        font-size: 5vw;
+    }
+
+    .performance-block__grid__button {
+        padding: 1.5vw;
+    }
+    .main__performances-article__separator {
+        height: 0.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__performances-article {
+        margin: 0 5vw;
+    }
+
+    .main__article__heading-line {
+        margin-bottom: 5vw;
+    }
+        
+    .performance-block {
+        flex-flow: column nowrap;
+        margin: 2vw 0;
+        padding: 2vw 0;
+    }
+        
+    .performance-block__figure {
+        flex: 1 1 fit-content;
+
+        img {
+            width: 65vw;
+        }
+    }
+
+    .performance-block__grid {
+        margin: 2vw;
+
+        p, button {
+            margin: 2.7vw 2vw;
+        }
+    }
+
+    .performance-block__grid__name {
+        font-size: 9vw;
+    }
+
+    .performance-block__grid__description {
+        font-size: 6vw;
+    }
+    
+    .performance-block__grid__author-before,
+    .performance-block__grid__author,
+    .performance-block__grid__director-before,
+    .performance-block__grid__director,
+    .performance-block__grid__painter-before,
+    .performance-block__grid__painter,
+    .performance-block__grid__duration-before,
+    .performance-block__grid__duration,
+    .performance-block__grid__price-before,
+    .performance-block__grid__price {
+        font-size: 5.5vw;
+    }
+
+    .performance-block__grid__date {
+        font-size: 8vw;
+    }
+
+    .performance-block__grid__button {
+        padding: 1.5vw;
+    }
+
+    .main__performances-article__separator {
+        height: 1vw;
+    }
+}

@@ -1,0 +1,152 @@
+.main__news-article {
+  margin: 0 10vw;
+}
+
+.main__article__heading-line {
+  margin-bottom: 0;
+}
+
+.main__news-article__link-to-news {
+  display: block;
+  margin: -3vw 0 6vw 0;
+  height: 0.1vw;
+}
+
+.news-block {
+  padding: 1vw;
+  border: 0.8vw outset;
+}
+.news-block:nth-of-type(even) {
+  border-color: darkred;
+}
+.news-block:nth-of-type(odd) {
+  border-color: cornflowerblue;
+}
+.news-block > p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.news-block__title {
+  margin: 1vw;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: darkred;
+}
+
+.news-block__figure {
+  margin: 0 0 1vw 2vw;
+  float: right;
+  text-align: center;
+}
+.news-block__figure img {
+  width: 20vw;
+}
+
+.news-block__text {
+  margin: 1vw;
+  text-indent: 3vw;
+  text-align: justify;
+  font-size: 1.7vw;
+  color: black;
+}
+
+.news-block__date {
+  clear: both;
+  margin: 1.7vw 0 0 0;
+  text-align: right;
+  text-decoration: overline;
+  font-size: 2vw;
+  color: #444444;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__news-article {
+    margin: 0 4vw;
+  }
+
+  .main__article__heading-line {
+    margin-bottom: 4vw;
+  }
+
+  .main__news-article__link-to-news {
+    margin: 2vw 0;
+    height: 0.1vw;
+  }
+
+  .news-block {
+    padding: 2vw;
+    border-width: 1.5vw;
+  }
+
+  .news-block__title {
+    margin: 1.5vw;
+    font-size: 6vw;
+  }
+
+  .news-block__figure {
+    margin: 2vw;
+    float: none;
+  }
+  .news-block__figure img {
+    width: 80%;
+  }
+
+  .news-block__text {
+    margin: 2.5vw;
+    text-indent: 4vw;
+    font-size: 3.5vw;
+  }
+
+  .news-block__date {
+    margin: 4vw 1vw 1vw 1vw;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 767px) {
+  .main__news-article {
+    margin: 0 4vw;
+  }
+
+  .main__article__heading-line {
+    margin-bottom: 7vw;
+  }
+
+  .main__news-article__link-to-news {
+    margin: 3vw 0;
+    height: 0.1vw;
+  }
+
+  .news-block {
+    padding: 0;
+    border-width: 1.5vw;
+  }
+
+  .news-block__title {
+    background-color: lightyellow;
+    margin: 0;
+    padding: 3vw 2vw;
+    font-size: 7.5vw;
+  }
+
+  .news-block__figure {
+    margin: 0;
+    float: none;
+  }
+  .news-block__figure img {
+    width: 100%;
+  }
+
+  .news-block__text {
+    margin: 3vw;
+    text-indent: 6vw;
+    font-size: 6vw;
+  }
+
+  .news-block__date {
+    margin: 7vw 3vw 3vw 3vw;
+    font-size: 7vw;
+  }
+}

@@ -1,0 +1,432 @@
+figure.gallery {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 35vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+figure.gallery > button {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 2vw;
+  line-height: 6vw;
+  margin-top: -5vw;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 3.5vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+figure.gallery > button:hover {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+figure.gallery > button.gallery__prev-button {
+  border-radius: 0 2vw 2vw 0;
+  left: 0;
+}
+figure.gallery > button.gallery__next-button {
+  border-radius: 2vw 0 0 2vw;
+  right: 0;
+}
+
+main > article {
+  margin: 0 10vw;
+  padding: 0 0 2.5vw 0;
+}
+
+.main__article__heading {
+  margin: 0 -10vw;
+  border-style: solid none;
+  border-width: 0.6vw;
+  border-color: #660000;
+  padding: 0.7vw 15vw;
+  background-color: darkred;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.1vw;
+  color: white;
+}
+
+.main__news-article__div, .main__performances-article__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.main__news-article__div .news-block, .main__performances-article__div .performance-block {
+  display: block;
+  margin: 1.5vw 2vw;
+  padding: 1vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  border: 0.3vw solid lightgrey;
+  border-radius: 1vw;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+.main__news-article__div .news-block:hover, .main__performances-article__div .performance-block:hover {
+  background-color: lightyellow;
+  -webkit-box-shadow: 0 0 0.3vw 0.3vw pink;
+          box-shadow: 0 0 0.3vw 0.3vw pink;
+  border-color: pink;
+}
+
+.main__performances-article__div .performance-block {
+  max-width: 25vw;
+  min-width: 15vw;
+  text-align: center;
+}
+.main__performances-article__div .performance-block:hover .performance-block__figure img {
+  width: 80%;
+}
+.main__performances-article__div .performance-block > p {
+  margin: 1vw 0;
+}
+.main__performances-article__div .performance-block__figure img {
+  width: 70%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.main__performances-article__div .performance-block__name {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 2vw;
+  color: darkred;
+}
+.main__performances-article__div .performance-block__author {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: black;
+}
+.main__performances-article__div .performance-block__description {
+  margin-top: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  font-style: italic;
+  color: #333333;
+}
+.main__performances-article__div .performance-block__date {
+  margin-top: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: darkred;
+}
+
+.main__news-article__div .news-block > p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main__news-article__div .news-block__title {
+  margin: 1vw 0;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: darkred;
+}
+.main__news-article__div .news-block__date {
+  margin: 0;
+  text-align: right;
+  text-decoration: underline;
+  font-size: 1.7vw;
+  color: #666666;
+}
+.main__news-article__div .news-block__text {
+  margin: 1vw;
+  text-indent: 3vw;
+  text-align: justify;
+  font-size: 1.7vw;
+  color: black;
+}
+
+.main__about-us-article figure {
+  margin: 1.5vw;
+  text-align: center;
+}
+.main__about-us-article figure img {
+  width: 70%;
+}
+
+.main__feedback-article {
+  padding-bottom: 0;
+}
+.main__feedback-article .main__article__heading {
+  margin-bottom: 1.5vw;
+}
+
+.main__about-us-article__article {
+  margin: 2vw 0;
+}
+.main__about-us-article__article > p {
+  margin: 1vw 0 0 0;
+  text-indent: 3vw;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5vw;
+  color: black;
+}
+
+.main__about-us-article__article__title {
+  margin: 1.5vw;
+  text-align: center;
+  font-size: 2.7vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: darkred;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  figure.gallery {
+    height: 45vw;
+  }
+  figure.gallery > button {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 45vw;
+    padding: 18vw 9vw;
+    line-height: 9vw;
+    margin-top: 0;
+    font-size: 5.5vw;
+  }
+  figure.gallery > button:hover {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  figure.gallery > button.gallery__prev-button, figure.gallery > button.gallery__next-button {
+    border-radius: 0;
+  }
+
+  main > article {
+    margin: 0 7vw;
+    padding: 0 0 4vw 0;
+  }
+
+  .main__article__heading {
+    margin: 0 -7vw;
+    border-width: 1.3vw;
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .main__performances-article__div, .main__news-article__div {
+    padding: 2vw 0 1vw 0;
+  }
+
+  .main__performances-article__div .performance-block, .main__news-article__div .news-block {
+    margin: 2vw;
+    padding: 2vw;
+    border-width: 0.6vw;
+    border-radius: 2.5vw;
+  }
+  .main__performances-article__div .performance-block:hover, .main__news-article__div .news-block:hover {
+    -webkit-box-shadow: 0 0 0.6vw 0.6vw pink;
+            box-shadow: 0 0 0.6vw 0.6vw pink;
+  }
+
+  .main__performances-article__div .performance-block {
+    max-width: 75vw;
+  }
+  .main__performances-article__div .performance-block:hover .performance-block__figure img {
+    width: 90%;
+  }
+  .main__performances-article__div .performance-block > p {
+    margin: 2vw 0;
+  }
+  .main__performances-article__div .performance-block__figure img {
+    width: 90%;
+  }
+  .main__performances-article__div .performance-block__name {
+    font-size: 4vw;
+  }
+  .main__performances-article__div .performance-block__author {
+    font-size: 2.7vw;
+  }
+  .main__performances-article__div .performance-block__description {
+    margin-top: 3vw;
+    font-size: 3vw;
+  }
+  .main__performances-article__div .performance-block__date {
+    margin-top: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .main__news-article__div .news-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main__news-article__div .news-block__title {
+    margin: 2vw 0;
+    font-size: 4.5vw;
+  }
+  .main__news-article__div .news-block__date {
+    font-size: 3.5vw;
+  }
+  .main__news-article__div .news-block__text {
+    text-indent: 3vw;
+    font-size: 3vw;
+  }
+
+  .main__about-us-article figure {
+    margin: 0 -7vw;
+  }
+  .main__about-us-article figure img {
+    width: 100vw;
+  }
+
+  .main__feedback-article .main__article__heading {
+    margin-bottom: 3vw;
+  }
+
+  .main__about-us-article__article {
+    margin: 4vw 0;
+  }
+  .main__about-us-article__article > p {
+    margin-top: 2vw;
+    text-indent: 4vw;
+    font-size: 3vw;
+  }
+
+  .main__about-us-article__article__title {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 767px) {
+  figure.gallery {
+    height: 50vw;
+  }
+  figure.gallery > button {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 50vw;
+    padding: 20vw 10vw;
+    line-height: 10vw;
+    margin-top: 0;
+    font-size: 6vw;
+  }
+  figure.gallery > button:hover {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  figure.gallery > button.gallery__prev-button, figure.gallery > button.gallery__next-button {
+    border-radius: 0;
+  }
+
+  main > article {
+    margin: 0 5vw;
+    padding: 0 0 6vw 0;
+  }
+
+  .main__article__heading {
+    margin: 0 -5vw;
+    border-width: 2vw;
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .main__performances-article__div, .main__news-article__div {
+    padding: 4vw 0 2vw 0;
+  }
+
+  .main__performances-article__div .performance-block, .main__news-article__div .news-block {
+    margin: 3vw;
+    padding: 3vw;
+    border-width: 1vw;
+    border-radius: 5vw;
+  }
+  .main__performances-article__div .performance-block:hover, .main__news-article__div .news-block:hover {
+    -webkit-box-shadow: 0 0 1vw 1vw pink;
+            box-shadow: 0 0 1vw 1vw pink;
+  }
+
+  div.main__performances-article__div .performance-block {
+    max-width: 90vw;
+  }
+  div.main__performances-article__div .performance-block > p {
+    margin: 3vw 0;
+  }
+  div.main__performances-article__div .performance-block__figure img {
+    width: 80%;
+  }
+  div.main__performances-article__div .performance-block__name {
+    font-size: 8vw;
+  }
+  div.main__performances-article__div .performance-block__author {
+    font-size: 6vw;
+  }
+  div.main__performances-article__div .performance-block__description {
+    margin-top: 5vw;
+    font-size: 6vw;
+  }
+  div.main__performances-article__div .performance-block__date {
+    margin-top: 5vw;
+    font-size: 7vw;
+  }
+
+  .main__news-article__div .news-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main__news-article__div .news-block__title {
+    margin: 2vw 0;
+    font-size: 8vw;
+  }
+  .main__news-article__div .news-block__date {
+    font-size: 6vw;
+  }
+  .main__news-article__div .news-block__text {
+    text-indent: 6vw;
+    font-size: 6vw;
+  }
+
+  .main__about-us-article figure {
+    margin: 0 -5vw;
+  }
+  .main__about-us-article figure img {
+    width: 100vw;
+  }
+
+  .main__feedback-article .main__article__heading {
+    margin-bottom: 4vw;
+  }
+
+  .main__about-us-article__article {
+    margin: 4vw 0;
+  }
+  .main__about-us-article__article > p {
+    margin-top: 3vw;
+    text-indent: 6vw;
+    font-size: 6vw;
+  }
+
+  .main__about-us-article__article__title {
+    font-size: 8vw;
+  }
+}

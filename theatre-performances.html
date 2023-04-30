@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='be'>
+    <head>
+        <title>Спектаклі | Тэатр &#xab;Дабрадзеі&#xbb;</title>
+
+        <meta charset='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+        <!-- Стили для шапки и подвала сайта -->
+        <link rel='stylesheet' href='styles/CSS/general.css'/>
+        <!-- Собственные стили страницы "Представления"-->
+        <link rel='stylesheet' href='styles/CSS/performances.css'/>
+        <!-- Стили кнопок -->
+        <link rel='stylesheet' href='styles/CSS/button_style.css'/>
+    </head>
+
+    <body>
+        <!-- Шапку вставляет JavaScript-код general_script.js -->
+        <header></header>
+
+        <main>
+            <!-- Раздел с блоками представлений -->
+            <article class='main__performances-article'>
+                <h1 class='main__article__page-heading'>Спектаклі</h1>
+                <hr class='main__article__heading-line'/>
+                <!-- Блоки представлений вставляет performances_script.js -->
+            </article>
+        </main>
+
+        <!-- Подвал вставляет JavaScript-код general_script.js -->
+        <footer></footer>
+
+        <!-- Вставляет шапку и подвал -->
+        <script src='scripts/general_script.js'></script>
+        <!-- Вставляет блоки представлений из performances_info.xml на основе performances_perf_block.html -->
+        <script src='scripts/performances_script.js'></script>
+    </body>
+</html>

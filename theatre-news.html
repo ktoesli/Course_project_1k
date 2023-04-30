@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='be'>
+    <head>
+        <title>Навіны | Тэатр &#xab;Дабрадзеі&#xbb;</title>
+
+        <meta charset='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+        <!-- Стили для шапки и подвала сайта -->
+        <link rel='stylesheet' href='styles/CSS/general.css'/>
+        <!-- Собственные стили страницы "Новости"-->
+        <link rel='stylesheet' href='styles/CSS/news.css'/>
+    </head>
+
+    <body>
+        <!-- Шапку вставляет JavaScript-код general_script.js -->
+        <header></header>
+
+        <main>
+            <!-- Раздел с новостями -->
+            <article class='main__news-article'>
+                <h1 class='main__article__page-heading'>Навіны</h1>
+                <hr class='main__article__heading-line'/>
+                <!-- Блоки новостей вставляет news_script.js -->
+            </article>
+        </main>
+
+        <!-- Подвал вставляет JavaScript-код general_script.js -->
+        <footer></footer>
+
+        <!-- Вставляет шапку и подвал -->
+        <script src='scripts/general_script.js'></script>
+        <!-- Вставляет блоки новостей из news_list.xml на основе news_block.html -->
+        <script src='scripts/news_script.js'></script>
+    </body>
+</html>

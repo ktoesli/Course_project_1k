@@ -1,0 +1,37 @@
+.button-style {
+  display: block;
+  border: 0.4vw solid darkred;
+  border-radius: 100vw;
+  padding: 1vw;
+  background-color: indianred;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vw;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.button-style:hover {
+  background-color: palevioletred;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .button-style {
+    border-width: 0.8vw;
+    padding: 1.5vw;
+    font-size: 4.5vw;
+  }
+}
+@media (max-width: 767px) {
+  .button-style {
+    border-width: 1.5vw;
+    padding: 2vw;
+    font-size: 7vw;
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="department-name" type="xs:string"></xs:element>
+    <xs:element name="post" type="xs:string"></xs:element>
+    <xs:element name="name" type="xs:string"></xs:element>
+    <xs:element name="phone" type="xs:string"></xs:element>
+    <xs:element name="instrument" type="xs:string"></xs:element>
+
+    <xs:element name="contact">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="post" minOccurs="0"></xs:element>
+                <xs:element ref="name"></xs:element>
+                <xs:element ref="phone" minOccurs="0"></xs:element>
+                <xs:element ref="instrument" minOccurs="0"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="department">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="department-name"></xs:element>
+                <xs:element ref="contact" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="contacts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="department" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
